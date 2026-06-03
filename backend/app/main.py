@@ -20,8 +20,8 @@ logger = logging.getLogger(__name__)
 app = FastAPI(
     title=settings.app_name,
     version=settings.app_version,
-    docs_url="/api/docs",
-    redoc_url="/api/redoc",
+    docs_url="/docs",
+    redoc_url="/redoc",
 )
 
 try:
@@ -40,5 +40,5 @@ app.add_middleware(
 app.add_middleware(LoggingMiddleware)
 app.add_middleware(MetricsMiddleware)
 
-app.include_router(api_router, prefix="/api/v1")
+app.include_router(api_router, prefix="/v1")
 app.include_router(ws_router)
