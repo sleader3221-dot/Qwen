@@ -1,0 +1,13 @@
+{
+  "name": "enterprise-autopilot-agent",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && uvicorn app.main:app --reload --port 8000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.db
+*.db-journal
+.env
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel/
